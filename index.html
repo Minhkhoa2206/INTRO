@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+<script>
+  function enableSound() {
+    document.getElementById("background-music").muted = false;
+    document.getElementById("intro-video").muted = false;
+  }
+</script>
+</head>
+<body onclick="enableSound()">
+
+<audio id="background-music" autoplay loop muted>
+  <source src="file:///C:/Users/khoam/Desktop/code/nhacnen.mp3" type="audio/mpeg">
+</audio>
+
+<video id="intro-video" controls autoplay onended="location.href='https://minhkhoa2206.github.io/nguyendinhphuc/';" muted>
+  <source src="file:///C:/Users/khoam/Desktop/code/videointro.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
